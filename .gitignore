@@ -8,9 +8,7 @@ __pycache__/
 .venv/
 env/
 
-# Local data files
-data/*
-html/*
+
 
 
 # OS junk
