@@ -3,8 +3,8 @@ export default {
   root: ".",
   pages: [
     { name: "Home", path: "index.md" },
-    { name: "Results", path: "results.md" },
-    { name: "Visualizations", path: "visualizations.md" }
+    { name: "Results", path: "example-dashbaord.md" },
+    { name: "Visualizations", path: "example-report.md" }
   ],
   base: "/project-fall25-alex-riz-NE/",
   output: "dist"
