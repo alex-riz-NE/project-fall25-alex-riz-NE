@@ -5,7 +5,9 @@ export default {
   root: "src_observable",
   
   pages: [
-    { name: "Home", path: "index.md" }
+    { name: "Home", path: "index.md" },
+    { name: "Report", path: "example-report.md" }
+
   ],
 
   base: "/project-fall25-alex-riz-NE/",

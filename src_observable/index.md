@@ -21,13 +21,10 @@ The long-term goal is to identify medication-related risks unique to individuals
 # Research Motivation
 
 Patients with post-stroke aphasia face unique barriers:
-
 - Communication difficulties impede reporting of symptoms or adverse drug effects  
 - Mental-health conditions (depression, anxiety, PTSD) are **underdiagnosed** in aphasia populations  
 - Sedatives, antipsychotics, and anticholinergic medications may **worsen cognitive or functional recovery**  
-- Polypharmacy increases the cumulative risk of adverse drug events, falls, delirium, and readmission  
-
-These concerns motivate the project’s central questions:
+- Polypharmacy increases the cumulative risk of adverse drug events and readmission  
 
 ---
 
@@ -57,6 +54,12 @@ Both statistical tests (chi-square, odds ratios) and machine learning models (XG
 A positive finding would suggest that:
 
 > **Preventing inappropriate prescribing could help reduce readmissions among stroke survivors, especially those with aphasia.**
+
+---
+
+# The Data 
+
+The OHDSI (Observational Health Data Sciences and Informatics) dataset is a large-scale healthcare database that is standardized using the OMOP Common Data Model (CDM). It contains de-identified electronic health records and other clinical data for millions of patients. The dataset includes detailed information on patient demographics, diagnoses, procedures and medications over a 5 year period. At Northeastern, the OHDSI Lab provides access to the Pharmetrics+ claims database, which covers approximately 31 million patient lives over a five-year period, including millions of individuals with at least one year of continuous observation. This makes it a powerful resource for population level studies on medication safety, disease progression, and healthcare delivery.
 
 ---
 
