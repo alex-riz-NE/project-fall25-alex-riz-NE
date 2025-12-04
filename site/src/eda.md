@@ -42,7 +42,7 @@ Below is a summary of all medication-related and condition flags, including ment
 | PTSD | 0.98% | 0.82% | 1.02% | −0.19% |
 | Schizophrenia | 0.59% | 0.52% | 0.61% | −0.09% |
 
-![Chord Graph](../fig/flag_eda_first_look/aphasia_v_nonahashia_chord_graph.png)
+![Chord Graph](/fig/flag_eda_first_look/aphasia_v_nonahashia_chord_graph.png)
 
 ---
 
@@ -55,7 +55,7 @@ Below is a summary of all medication-related and condition flags, including ment
 | Antipsychotic | 3.05% | 2.94% | 3.07% | −0.12% |
 | Sedative/Hypnotic | 2.43% | 2.26% | 2.47% | −0.21% |
 
-![Medication Graph](../fig/flag_eda/medication_class_use_aphasia_vs_no_aphasia.png)
+![Medication Graph](/fig/flag_eda/medication_class_use_aphasia_vs_no_aphasia.png)
 
 ---
 

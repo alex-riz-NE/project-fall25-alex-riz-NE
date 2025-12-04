@@ -60,12 +60,12 @@ _(Insert the metrics from your notebook.)_
 These images should be saved in your repo and referenced here.
 
 ### **XGBoost Feature Importance**
-![Feature Importance](../fig/xgb/xgb_feature_importance.png)
+![Feature Importance](/fig/xgb/xgb_feature_importance.png)
 
     The Xgboost model did a good job with the recall but a bad job with the precision for the positive class. This means that the model captured all of the cases of hospital readmission but had some false positives. This happens because there were only a small amount of the population that had hospital readmissions. This is common with medical research of rare events. The model does still have some usefulness as an explanitory model, but should not be used in a medical environement since there would be medical cost waste and patients worry. 
 
 ### **Precision-Recall Curve**
-![PR Curve](../fig/xgb/precision_recall_curve.png)
+![PR Curve](/fig/xgb/precision_recall_curve.png)
 
 ---
 
@@ -74,11 +74,11 @@ These images should be saved in your repo and referenced here.
     In order to get a bigger look into the relationship between the features and their importance to the model SHAP was used. SHAP, which stands for Shapley Additive Explanations, is a method used to explain the predictions made by machine learning models. SHAP assigns each feature a value that represents how much that feature contributed to the model’s prediction for a specific observation.
 
 ### ** SHAP Summary**
-![SHAP Summary](../fig/xgb/shap_summary.png)
+![SHAP Summary](/fig/xgb/shap_summary.png)
 
 
 ### ** Top Features (SHAP Bar Plot)**
-![SHAP Bar Plot](../fig/xgb/shap_bar.png)
+![SHAP Bar Plot](/fig/xgb/shap_bar.png)
 
 ### **SHAP Dependence Plots**
 Key variables:
