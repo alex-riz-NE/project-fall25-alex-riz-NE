@@ -68,7 +68,7 @@ Below is a summary of all medication-related and condition flags, including ment
 
 ## **Key Takeaways**
 
-- The aphasia subgroup has **higher rates of depression, anxiety, and seizure disorders**, all of which are clinically relevant to medication safety.
+- The aphasia subgroup has higher rates of depression, anxiety, and seizure disorders, all of which are clinically relevant to medication safety.
 - Medication usage is modestly higher for antidepressants and anxiolytics in the aphasia group.
 - These patterns justify further analysis of how these medications relate to PIMs and readmission risk.
 
