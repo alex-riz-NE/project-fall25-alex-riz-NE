@@ -23,11 +23,9 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        working-directory: site
         run: npm install
 
       - name: Build Observable Site
-        working-directory: site
         run: npx @observablehq/framework build
 
       - name: Upload artifact
