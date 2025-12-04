@@ -86,10 +86,3 @@ This project constructs a reproducible data pipeline using SQL, Python, and the 
 
 # Visualizations and Results
 
-_(You can embed your charts here once generated.)_
-
-Examples of sections you can add:
-
-```js
-// Example: import a figure
-import Figure("figures/pim_prevalence.png")
