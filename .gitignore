@@ -11,7 +11,7 @@ env/
 # Local data files
 data/*.csv
 
-
+node_modules/
 
 # OS junk
 .DS_Store
