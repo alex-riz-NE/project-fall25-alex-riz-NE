@@ -125,9 +125,5 @@ Although PIM prevalence is low, the model captures their disproportionate impact
 
 - **SHAP improves interpretability**, showing *how* medications and conditions interact.
 
-- **Future steps:**  
-  - Add dosage-level or time-windowed medication features  
-  - Explore interaction-rich models (e.g., GAM, CatBoost)  
-  - Validate results on additional OMOP cohorts
 
 ---

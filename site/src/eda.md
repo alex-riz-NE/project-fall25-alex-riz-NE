@@ -58,7 +58,28 @@ Below is a summary of all medication-related and condition flags, including ment
 ![Medication Graph](medication_class_use_aphasia_vs_no_aphasia.png)
 
 ---
+## **At-Risk Medication Use (Aphasia vs No Aphasia)**
 
+| Patient Characteristic        | # All Patients | % All Patients | # Aphasia | % Aphasia | # No Aphasia | % No Aphasia | % Difference (Aphasia − No Aphasia) |
+|------------------------------|----------------|----------------|-----------|-----------|--------------|---------------|--------------------------------------|
+| At-Risk (Sedative/Hypnotic)  | 16,820         | 29.94%         | 3,084     | 33.86%    | 13,736        | 29.18%       | 4.68%                                |
+| At-Risk (Anxiolytic)         | 14,775         | 26.30%         | 2,740     | 30.08%    | 12,035        | 25.57%       | 4.52%                                |
+| At-Risk (Antidepressant)     | 11,443         | 20.37%         | 2,024     | 22.22%    | 9,419         | 20.01%       | 2.21%                                |
+| At-Risk (Antipsychotic)      | 1,510          | 2.69%          | 254       | 2.79%     | 1,256         | 2.67%        | 0.12%                                |
+
+![At Risk Table](at_risk_medication_use_aphasia_vs_no_aphasia.png)
+---
+
+## **Grouped PIM Rates (Aphasia vs No Aphasia)**
+
+Patient Characteristic | # (All Patients) | % (All Patients) | # (Aphasia) | % (Aphasia) | # (No Aphasia) | % (No Aphasia) | % Difference (Aphasia − No Aphasia)
+--- | --- | --- | --- | --- | --- | --- | ---
+Antidepressant PIM | 3543 | 6.306403 | 643 | 7.059728 | 2900 | 6.160644 | 0.899084
+Antipsychotic PIM | 1075 | 1.913458 | 195 | 2.140975 | 880 | 1.869437 | 0.271538
+Anxiolytic PIM | 795 | 1.415069 | 132 | 1.449275 | 663 | 1.408451 | 0.040825
+Sedative/Hypnotic PIM | 685 | 1.219273 | 104 | 1.141853 | 581 | 1.234253 | -0.092400
+
+![Pim Table](grouped_pim_rates_aphasia_vs_no_aphasia.png)
 ## **Key Takeaways**
 
 - The aphasia subgroup has higher rates of depression, anxiety, and seizure disorders, all of which are clinically relevant to medication safety.
