@@ -2,7 +2,7 @@ export default {
   title: "Stroke PIM Study",
   
   // ⭐ Tell Observable to use your new folder:
-  root: ".",
+  root: "src",
   
   pages: [
     { name: "Home", path: "index.md" },
