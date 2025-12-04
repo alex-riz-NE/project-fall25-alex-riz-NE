@@ -7,9 +7,7 @@ export default {
   base: "/project-fall25-alex-riz-NE/",
   output: "dist"
 
-    ignore: [
-    "node_modules/**"
-  ]
+
 };
 
 
