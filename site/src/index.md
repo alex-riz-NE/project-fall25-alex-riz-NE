@@ -1,6 +1,5 @@
----
-title: "Examining PIMs, Polypharmacy, and Readmission Risk in Stroke Survivors with Aphasia"
-toc: true
+# Examining PIMs, Polypharmacy, and Readmission Risk in Stroke Survivors with Aphasia
+
 ---
 
 # Overview
