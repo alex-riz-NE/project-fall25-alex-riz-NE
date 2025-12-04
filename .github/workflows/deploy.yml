@@ -1,9 +1,8 @@
-name: Deploy Observable Site
+name: Deploy Observable Framework
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 permissions:
   contents: read
@@ -13,34 +12,27 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
-
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Build Observable Site
-        run: npx @observablehq/framework build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+          node-version: '20'
+          cache: 'npm'
+          
+      - run: npm ci
+      - run: npm run build  # This builds src/*.md into dist/*.html
+      
+      - uses: actions/upload-pages-artifact@v4
         with:
-          path: dist
-
+          path: ./dist  # Deploy the BUILT files, not src
+          
   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deploy
-        uses: actions/deploy-pages@v4
+      - uses: actions/deploy-pages@v4
+        id: deployment
