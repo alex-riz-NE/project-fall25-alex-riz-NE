@@ -204,13 +204,131 @@ Horizon | Group | Mean | Median
 180d | Aphasia | 0.129117 | 0.0
 180d | No Aphasia | 0.114142 | 0.0
 
-## Chi-Square Tests
-Test | Chi2 | p-value
+## Chi-Square Tests (PIM and Polypharmacy)
+
+### Chi-Square Test: any_pim
+
+Group | any_pim = 0 | any_pim = 1
 --- | --- | ---
-any_pim vs aphasia | 5.707 | 0.01690
-polypharmacy vs aphasia | 8.804 | 0.00301
+Aphasia = 0 | 42538 | 4535  
+Aphasia = 1 | 8156 | 952  
+
+Chi-square statistic: 5.707  
+p-value: 0.01690  
+
+
+### Chi-Square Test: has_polypharmacy
+
+Group | has_polypharmacy = 0 | has_polypharmacy = 1
+--- | --- | ---
+Aphasia = 0 | 26473 | 20600  
+Aphasia = 1 | 4968 | 4140  
+
+Chi-square statistic: 8.804  
+p-value: 0.00301  
+
 
 ## Unadjusted Odds Ratios (PIM and Polypharmacy → Readmission)
-Note: odds ratios appear infinite or undefined due to zero counts in reference rows.
 
-## End of Report
+### Outcome: readmit_30d
+
+#### any_pim → readmit_30d  
+readmit_30d | 0 | 1
+--- | --- | ---
+any_pim = 0 | 50694 | 0  
+any_pim = 1 | 4975 | 512  
+
+Odds Ratio: nan  
+p-value: 0  
+
+
+#### has_polypharmacy → readmit_30d  
+readmit_30d | 0 | 1
+--- | --- | ---
+polypharmacy = 0 | 31441 | 0  
+polypharmacy = 1 | 24228 | 512  
+
+Odds Ratio: nan  
+p-value: 2.5e-144  
+
+
+### Outcome: readmit_90d
+
+#### any_pim → readmit_90d  
+readmit_90d | 0 | 1
+--- | --- | ---
+any_pim = 0 | 50694 | 0  
+any_pim = 1 | 4418 | 1069  
+
+Odds Ratio: nan  
+p-value: 0  
+
+
+#### has_polypharmacy → readmit_90d  
+readmit_90d | 0 | 1
+--- | --- | ---
+polypharmacy = 0 | 31441 | 0  
+polypharmacy = 1 | 23671 | 1069  
+
+Odds Ratio: nan  
+p-value: 1.28e-302  
+
+
+### Outcome: readmit_180d
+
+#### any_pim → readmit_180d  
+readmit_180d | 0 | 1
+--- | --- | ---
+any_pim = 0 | 50694 | 0  
+any_pim = 1 | 3584 | 1903  
+
+Odds Ratio: nan  
+p-value: 0  
+
+
+#### has_polypharmacy → readmit_180d  
+readmit_180d | 0 | 1
+--- | --- | ---
+polypharmacy = 0 | 31441 | 0  
+polypharmacy = 1 | 22837 | 1903  
+
+Odds Ratio: nan  
+p-value: 0  
+
+
+## PIM Category Readmission (All Horizons)
+
+Horizon | Category | Pct Aphasia | Pct No Aphasia | Diff | Mean Aph | Mean No | Mean Diff Abs
+--- | --- | --- | --- | --- | --- | --- | ---
+30d | PIM: Antidepressant | 8.087092 | 8.379310 | -0.292219 | 0.203733 | 0.196552 | 0.007181
+30d | PIM: Antipsychotic | 11.282051 | 14.090909 | -2.808858 | 0.261538 | 0.357955 | 0.096416
+30d | PIM: Anxiolytic | 12.121212 | 8.597285 | 3.523927 | 0.287879 | 0.212670 | 0.075209
+30d | PIM: Sed/Hypnotic | 8.653846 | 7.056799 | 1.597048 | 0.163462 | 0.154905 | 0.008556
+90d | PIM: Antidepressant | 18.351477 | 17.482759 | 0.868719 | 0.548989 | 0.455862 | 0.093127
+90d | PIM: Antipsychotic | 30.256410 | 27.386364 | 2.870047 | 0.912821 | 0.920455 | 0.007634
+90d | PIM: Anxiolytic | 20.454545 | 18.702866 | 1.751680 | 0.568182 | 0.499246 | 0.068936
+90d | PIM: Sed/Hypnotic | 25.961538 | 15.318417 | 10.643122 | 0.663462 | 0.375215 | 0.288246
+180d | PIM: Antidepressant | 33.592535 | 32.965517 | 0.627018 | 1.113530 | 1.019310 | 0.094220
+180d | PIM: Antipsychotic | 42.051282 | 43.636364 | -1.585082 | 1.717949 | 1.990909 | 0.272960
+180d | PIM: Anxiolytic | 32.575758 | 32.730015 | -0.154258 | 1.181818 | 0.963801 | 0.218017
+180d | PIM: Sed/Hypnotic | 38.461538 | 30.120482 | 8.341057 | 1.201923 | 0.865749 | 0.336174
+
+
+## At-Risk Category Readmission (All Horizons)
+
+Horizon | Category | Pct Aphasia | Pct No Aphasia | Diff | Mean Aph | Mean No | Mean Diff Abs
+--- | --- | --- | --- | --- | --- | --- | ---
+30d | At-Risk: Sed/Hypnotic | 0.810636 | 0.808096 | 0.002540 | 0.020752 | 0.019001 | 0.001751
+30d | At-Risk: Anxiolytic | 0.729927 | 0.673037 | 0.056890 | 0.015693 | 0.017200 | 0.001506
+30d | At-Risk: Antidepressant | 0.296443 | 0.180486 | 0.115956 | 0.010375 | 0.005096 | 0.005279
+30d | At-Risk: Antipsychotic | 0.787402 | 0.796178 | -0.008777 | 0.015748 | 0.019108 | 0.003360
+90d | At-Risk: Sed/Hypnotic | 1.913100 | 1.528829 | 0.384271 | 0.064851 | 0.048122 | 0.016729
+90d | At-Risk: Anxiolytic | 1.788321 | 1.395929 | 0.392393 | 0.055109 | 0.043706 | 0.011404
+90d | At-Risk: Antidepressant | 0.543478 | 0.414057 | 0.129422 | 0.024209 | 0.012740 | 0.011469
+90d | At-Risk: Antipsychotic | 1.181102 | 1.751592 | -0.570490 | 0.031496 | 0.047771 | 0.016275
+180d | At-Risk: Sed/Hypnotic | 3.015564 | 2.548049 | 0.467515 | 0.128080 | 0.110221 | 0.017859
+180d | At-Risk: Anxiolytic | 2.883212 | 2.393020 | 0.490191 | 0.107664 | 0.102036 | 0.005629
+180d | At-Risk: Antidepressant | 0.592885 | 0.637010 | -0.044125 | 0.048419 | 0.024313 | 0.024106
+180d | At-Risk: Antipsychotic | 4.330709 | 2.945860 | 1.384849 | 0.161417 | 0.086783 | 0.074634
+
+
