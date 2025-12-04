@@ -74,11 +74,11 @@ These images should be saved in your repo and referenced here.
     In order to get a bigger look into the relationship between the features and their importance to the model SHAP was used. SHAP, which stands for Shapley Additive Explanations, is a method used to explain the predictions made by machine learning models. SHAP assigns each feature a value that represents how much that feature contributed to the model’s prediction for a specific observation.
 
 ### ** SHAP Summary**
-![SHAP Summary](../fig/xgb/shap_summary.png)
+![SHAP Summary](../fig/xgb/shap_summary_plot.png)
 
 
 ### ** Top Features (SHAP Bar Plot)**
-![SHAP Bar Plot](shap_bar.png)
+![SHAP Bar Plot](shap_summary_bar.png)
 
 ### **SHAP Dependence Plots**
 Key variables:
