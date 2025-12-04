@@ -1,6 +1,6 @@
 export default {
   title: "Stroke PIM Study",
-  root: ".",
+  root: "site",
   pages: [
     { name: "Home", path: "index.md" } 
   ],
