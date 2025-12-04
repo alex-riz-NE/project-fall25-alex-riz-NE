@@ -42,19 +42,7 @@ The workflow includes:
 - Algorithm: `XGBClassifier` (XGBoost)  
 
 
-**Best test-set performance:**
-
-- Accuracy: **…**  
-- Precision: **…**  
-- Recall: **…**  
-- F1 Score: **…**  
-- ROC-AUC: **…**
-
-_(Insert the metrics from your notebook.)_
-
----
-
-## 4. Model Evaluation Images
+## 4. Model Evaluation 
 
 These images should be saved in your repo and referenced here.
 
