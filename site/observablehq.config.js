@@ -1,13 +1,15 @@
 export default {
   title: "Stroke PIM Study",
+  root: ".",
   pages: [
-    { name: "Home", path: "index.md" }
+    { name: "Home", path: "index.md" },
   ],
   base: "/project-fall25-alex-riz-NE/",
-  output: "dist",
+  output: "dist"
 
-  // ⛔ Prevent bundling node_modules assets
-  ignore: [
+    ignore: [
     "node_modules/**"
   ]
 };
+
+
