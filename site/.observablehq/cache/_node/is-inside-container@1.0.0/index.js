@@ -1,0 +1,1 @@
+import r from"node:fs";import n from"../is-docker@3.0.0/index.js";let t;const e=()=>{try{return r.statSync("/run/.containerenv"),!0}catch{return!1}};function o(){return t===void 0&&(t=e()||n()),t}export{o as default};

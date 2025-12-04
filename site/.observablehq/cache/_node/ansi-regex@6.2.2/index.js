@@ -1,0 +1,1 @@
+function n({onlyFirst:u=!1}={}){const e="(?:\\u001B\\][\\s\\S]*?(?:\\u0007|\\u001B\\u005C|\\u009C))|[\\u001B\\u009B][[\\]()#;?]*(?:\\d{1,4}(?:[;:]\\d{0,4})*)?[\\dA-PR-TZcf-nq-uy=><~]";return new RegExp(e,u?void 0:"g")}export{n as default};

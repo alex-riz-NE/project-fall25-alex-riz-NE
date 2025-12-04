@@ -1,0 +1,1 @@
+import r from"../ansi-regex@6.2.2/index.js";const o=r();function e(t){if(typeof t!="string")throw new TypeError(`Expected a \`string\`, got \`${typeof t}\``);return t.replace(o,"")}export{e as default};

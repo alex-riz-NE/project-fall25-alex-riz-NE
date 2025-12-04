@@ -1,0 +1,1 @@
+function a(t,r,u){const n=e=>Object.defineProperty(t,r,{value:e,enumerable:!0,writable:!0});return Object.defineProperty(t,r,{configurable:!0,enumerable:!0,get(){const e=u();return n(e),e},set(e){n(e)}}),t}export{a as default};

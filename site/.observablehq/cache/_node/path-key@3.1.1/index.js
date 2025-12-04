@@ -1,0 +1,1 @@
+function s(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}var t={exports:{}};const r=(e={})=>{const o=e.env||process.env;return(e.platform||process.platform)!=="win32"?"PATH":Object.keys(o).reverse().find(p=>p.toUpperCase()==="PATH")||"Path"};t.exports=r,t.exports.default=r;var a=t.exports,n=s(a);export{n as default};

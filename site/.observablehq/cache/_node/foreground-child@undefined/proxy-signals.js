@@ -1,0 +1,1 @@
+import c from"node:constants";const n=Object.keys(c).filter(o=>o.startsWith("SIG")&&o!=="SIGPROF"&&o!=="SIGKILL"),i=o=>{const r=new Map;for(const s of n){const t=()=>{try{o.kill(s)}catch{}};try{process.on(s,t),r.set(s,t)}catch{}}const e=()=>{for(const[s,t]of r)process.removeListener(s,t)};return o.on("exit",e),e};export{i as proxySignals};

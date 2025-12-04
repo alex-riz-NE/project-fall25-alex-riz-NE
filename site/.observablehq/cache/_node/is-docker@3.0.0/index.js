@@ -1,0 +1,1 @@
+import t from"node:fs";let r;function e(){try{return t.statSync("/.dockerenv"),!0}catch{return!1}}function n(){try{return t.readFileSync("/proc/self/cgroup","utf8").includes("docker")}catch{return!1}}function c(){return r===void 0&&(r=e()||n()),r}export{c as default};

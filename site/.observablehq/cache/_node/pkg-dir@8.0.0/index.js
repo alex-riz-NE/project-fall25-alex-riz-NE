@@ -1,0 +1,1 @@
+import r from"node:path";import{findUp as a,findUpSync as o}from"../find-up-simple@1.0.1/index.js";async function i({cwd:c}={}){const n=await a("package.json",{cwd:c});return n&&r.dirname(n)}function t({cwd:c}={}){const n=o("package.json",{cwd:c});return n&&r.dirname(n)}export{i as packageDirectory,t as packageDirectorySync};

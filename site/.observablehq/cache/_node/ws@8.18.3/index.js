@@ -1,0 +1,1 @@
+function t(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}var r=function(){throw new Error("ws does not work in the browser. Browser clients must use the native WebSocket object")},o=t(r);export{o as default};
