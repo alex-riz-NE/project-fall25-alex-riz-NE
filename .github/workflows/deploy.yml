@@ -1,41 +1,46 @@
-name: Deploy Observable site
+name: Deploy Observable Site
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 18
 
-      - name: Install dependencies
-        working-directory: ./site
+      - name: Install Dependencies
         run: npm install
 
-      - name: Build site
-        working-directory: ./site
+      - name: Build Observable Site
         run: npx @observablehq/framework build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: site/dist
+          path: dist
 
   deploy:
     needs: build
-    permissions:
-      pages: write
-      id-token: write
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
-    runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/deploy-pages@v2
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
